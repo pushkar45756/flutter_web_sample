@@ -3,6 +3,8 @@ import 'package:flutter_web_sample/pages/auth/authentication.dart';
 import 'package:flutter_web_sample/pages/clients/clients.dart';
 import 'package:flutter_web_sample/pages/drivers/drivers.dart';
 import 'package:flutter_web_sample/pages/overview/overview.dart';
+import 'package:flutter_web_sample/pages/rtsp/chewie_player.dart';
+import 'package:flutter_web_sample/pages/rtsp/vlc_player_page.dart';
 import 'package:flutter_web_sample/routing/routes.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -15,6 +17,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(const ClientPage());
     case authenticationPageRoute:
       return _getPageRoute(const AuthPage());
+    case rtspPlayerPageRoute:
+      return _getPageRoute(const RtspPlayer());
+    case chewiePlayerPageRoute:
+      return _getPageRoute(const ChewiePlayer());
     default:
       return _getPageRoute(const AuthPage());
   }

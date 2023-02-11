@@ -5,6 +5,6 @@ import 'package:flutter_web_sample/routing/routes.dart';
 
 Navigator localNavigator() => Navigator(
       key: navController.navigatorKey,
-      initialRoute: overViewPageRoute,
+      initialRoute: chewiePlayerPageRoute,
       onGenerateRoute: generateRoute,
     );

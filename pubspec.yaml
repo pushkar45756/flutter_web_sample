@@ -40,6 +40,9 @@ dependencies:
   google_fonts: ^4.0.1
   charts_flutter_new: ^0.12.0
   data_table_2: ^2.3.11
+  chewie: ^1.4.0
+  flutter_vlc_player: ^7.2.0
+  video_player: ^2.5.1
   
 
 dev_dependencies:

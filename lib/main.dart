@@ -8,7 +8,7 @@ import 'layout.dart';
 
 void main() {
   Get.put(MenuController());
-  Get.put(NavigationController ());
+  Get.put(NavigationController());
   runApp(const WebApplication());
 }
 
@@ -21,6 +21,7 @@ class WebApplication extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dash',
       theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: Colors.white,
         textTheme: GoogleFonts.mulishTextTheme(
           Theme.of(context).textTheme,
